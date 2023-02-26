@@ -1,8 +1,10 @@
 import express from "express";
-import { saveAgent } from "../Collections/travelingAgent.js";
+import { fetchAgentByCity, fetchAllAgent, saveAgent } from "../Controllers/travelingAgent.js";
 
 const router = express.Router();
 
-router.post('/api/createagent', saveAgent);
+router.post('/agent/createagent', saveAgent);
+router.get('/agent/all', fetchAllAgent);
+router.get('/agent/:city', fetchAgentByCity);
 
 export default router;
