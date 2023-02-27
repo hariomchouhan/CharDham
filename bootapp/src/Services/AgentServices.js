@@ -11,6 +11,6 @@ export function saveAgent(agent) {
 export function fetchAllAgents(url) {
     return axios.get(`http://localhost:8080/agent/${url}`);
 }
-// export function deleteEmployee(url) {
-//     return axios.delete(`http://localhost:8080/agent/:${url}`);
-// }
+export function deleteAgent(id) {
+    return axios.delete(`http://localhost:8080/agent/${id}`);
+}

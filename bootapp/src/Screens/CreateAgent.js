@@ -18,16 +18,21 @@ export class CreateAgent extends Component {
         e.preventDefault();
         const response = await saveAgent(this.state.formData);
         console.log(response.data);
-        this.setState({ isInserted: true });
+        setTimeout(() => {
+            this.setState({ isInserted: true });
+        }, 0);
+        setTimeout(() => {
+            this.setState({ isInserted: false });
+        }, 2000);
     }
     render() {
         return (
             <>
-                <Container className="mt-5 text-center">
-                    <Alert variant="success"> Register a new Agent</Alert>
+                <Container className="mt-5 text-center w-75">
+                    <Alert variant="primary"> Register a new Agent</Alert>
                 </Container>
                 {
-                    this.state.isInserted ? <Container className="mt-3 text-center">
+                    this.state.isInserted ? <Container className="mt-3 text-center w-75">
                         <Alert variant="success">Employee Register !</Alert>
                     </Container> : null
                 }

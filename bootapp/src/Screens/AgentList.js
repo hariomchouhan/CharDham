@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Alert, Container, Dropdown, Table } from "react-bootstrap";
-import { fetchAllAgents } from "../Services/AgentServices.js";
+import { Alert, Button, Container, Dropdown, Table } from "react-bootstrap";
+import { deleteAgent, fetchAllAgents } from "../Services/AgentServices.js";
 
 export function AgentList() {
     const [agent, setAgent] = useState([]);
@@ -56,12 +56,12 @@ export function AgentList() {
                                         <td>{agt.street}, {agt.city}, {agt.state}</td>
                                         <td>{agt.email}</td>
                                         <td>{agt.website}</td>
-                                        {/* <td><Button variant="danger" className="btn-sm" onClick={async()=>{
-                                            await deleteEmployee(emp._id);
-                                            fetchEmployees();
+                                        <td><Button variant="danger" className="btn-sm" onClick={async()=>{
+                                            await deleteAgent(agt._id);
+                                            fetchAgents("all");
                                         }}>Remove</Button>
-                                        <Button variant="primary" className="btn-sm mx-5">Edit List</Button>
-                                        </td> */}
+                                        {/* <Button variant="primary" className="btn-sm mx-5">Edit List</Button> */}
+                                        </td>
                                     </tr>
                                 )
                             })

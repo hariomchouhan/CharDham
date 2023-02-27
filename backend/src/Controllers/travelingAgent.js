@@ -25,8 +25,18 @@ export async function fetchAllAgent(request, response) {
 
 export async function fetchAgentByCity(request, response) {
     try {
-        const agent = await AgentModel.find({city: request.params.city});
+        const agent = await AgentModel.find({ city: request.params.city });
         response.status(StatusCodes.CREATED).json(agent);
+    } catch (error) {
+        console.log(error);
+        response.status(StatusCodes.INTERNAL_SERVER_ERROR).json();
+    }
+}
+
+export async function deleteAgentById(request, response) {
+    try {
+        const agent = await AgentModel.findByIdAndDelete(request.params.id);
+        response.status(StatusCodes.NO_CONTENT).json();
     } catch (error) {
         console.log(error);
         response.status(StatusCodes.INTERNAL_SERVER_ERROR).json();
