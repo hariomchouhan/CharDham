@@ -5,6 +5,7 @@ import { Navigationbar } from './Components/Navigationbar';
 import { CreateAgent } from './Screens/CreateAgent';
 import { AgentList } from './Screens/AgentList';
 import Home from './Components/Home';
+import { Dharamshala } from './Screens/Dharamshala';
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
     <Route path="/" element={<Home />} />
     <Route path="/createagent" element={<CreateAgent />} />
     <Route path="/agent-list" element={<AgentList />} />
+    <Route path="/createtravel" element={<Dharamshala />} />
     </Routes>
     </BrowserRouter>
     </>

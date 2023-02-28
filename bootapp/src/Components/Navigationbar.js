@@ -21,6 +21,9 @@ export class Navigationbar extends Component {
                                 <LinkContainer to='agent-list'>
                                     <Nav.Link>Agent List</Nav.Link>
                                 </LinkContainer>
+                                <LinkContainer to='createtravel'>
+                                    <Nav.Link>Register Travel</Nav.Link>
+                                </LinkContainer>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>
