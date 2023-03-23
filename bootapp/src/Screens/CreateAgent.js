@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { Alert, Button, Col, Container, Form, Row } from "react-bootstrap";
-import { saveAgent } from "../Services/AgentServices.js";
+import { saveAgent } from "../Services/api.js";
 
 export class CreateAgent extends Component {
     constructor() {
@@ -33,7 +33,7 @@ export class CreateAgent extends Component {
                 </Container>
                 {
                     this.state.isInserted ? <Container className="mt-3 text-center w-75">
-                        <Alert variant="success">Employee Register !</Alert>
+                        <Alert variant="success">Agent Register !</Alert>
                     </Container> : null
                 }
                 <Container>

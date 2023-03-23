@@ -1,5 +1,5 @@
 import { StatusCodes } from "http-status-codes";
-import { DharamshalaModel } from "../Models/Dharamshala.js";
+import { DharamshalaModel } from "../Models/DharamshalaModel.js";
 
 export async function saveDharamshala(request, response) {
     try {

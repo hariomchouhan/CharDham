@@ -1,0 +1,52 @@
+.cardHover:hover {
+    /* -webkit-transform: scale(1.1); */
+    /* -ms-transform: scale(1.1); */
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+
+.cooking-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.cooking-area .widget:hover {
+    transform: translateY(-9px) !important;
+}
+
+.widget {
+    flex-wrap: wrap;
+    width: calc((100% - 50px) / 3);
+    float: left;
+    background: #ffffff;
+    padding: 5px 0 5px;
+    margin: 8px 8px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 14px;
+    box-shadow: -1px 7px 8px 1px rgb(0 0 0 / 20%);
+    transition: all .3s ease;
+    margin-bottom: 50px;
+}
+
+/* 864px */
+@media (max-width: 49em) {
+    .widget {
+        margin: 2rem 2rem;
+        width: 25rem;
+    }
+}
+
+.cooking-area-title {
+    text-decoration: none;
+    color: var(--bs-link-color);
+}
+
+.cooking-area-title:hover {
+    text-decoration: none;
+    color: black;
+}

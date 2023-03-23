@@ -6,23 +6,29 @@ export class Navigationbar extends Component {
     render() {
         return (
             <>
-                <Navbar bg="primary" variant="dark" expand="lg">
+                <Navbar sticky="top" bg="primary" variant="dark" expand="lg" className="py-3">
                     <Container>
-                        <Navbar.Brand>Char Dham Hari</Navbar.Brand>
+                        <Navbar.Brand>Char Dham Yatra</Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
                                 <LinkContainer to='/'>
                                     <Nav.Link>Home</Nav.Link>
                                 </LinkContainer>
-                                <LinkContainer to='/createagent'>
-                                    <Nav.Link>Register Agent</Nav.Link>
-                                </LinkContainer>
                                 <LinkContainer to='agent-list'>
                                     <Nav.Link>Agent List</Nav.Link>
                                 </LinkContainer>
-                                <LinkContainer to='createtravel'>
-                                    <Nav.Link>Register Travel</Nav.Link>
+                                <LinkContainer to='/dharamshala'>
+                                    <Nav.Link>Dharamshala</Nav.Link>
+                                </LinkContainer>
+                                <LinkContainer to='/hotel'>
+                                    <Nav.Link>Hotel</Nav.Link>
+                                </LinkContainer>
+                                <LinkContainer to='/homestay'>
+                                    <Nav.Link>HomeStay</Nav.Link>
+                                </LinkContainer>
+                                <LinkContainer to='/best-timing'>
+                                    <Nav.Link>BestTiming</Nav.Link>
                                 </LinkContainer>
                             </Nav>
                         </Navbar.Collapse>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Alert, Button, Container, Dropdown, Table } from "react-bootstrap";
-import { deleteAgent, fetchAllAgents } from "../Services/AgentServices.js";
+import { Container, Dropdown, Image, Table } from "react-bootstrap";
+import { fetchAllAgents } from "../Services/api.js";
 
 export function AgentList() {
     const [agent, setAgent] = useState([]);
@@ -15,11 +15,14 @@ export function AgentList() {
 
     return (
         <>
-            <Container className="mt-5 text-center">
-                <Alert variant="success">List of Agents</Alert>
+            <div>
+                <Image src="https://himalayavedicworld.com/images/blog/1/char-dham-banner.jpg" alt="OM" style={{ width: '100%', height: '300px' }}></Image>
+            </div>
+            <Container className="my-5 text-center">
+                <h1 style={{ borderRadius: "20px", background: '#0D6EFD', color: 'white', boxShadow: '5px 5px lightblue' , padding: '10px' }}>List of Agents</h1>
             </Container>
             <Container className="mt-4 mb-4">
-                <Dropdown onSelect={(k, e)=>{
+                <Dropdown onSelect={(k, e) => {
                     fetchAgents(e.target.innerHTML);
                 }}>
                     <Dropdown.Toggle variant="success" id="dropdown-basic">
@@ -29,14 +32,14 @@ export function AgentList() {
                     <Dropdown.Menu>
                         {/* All, Pending and Completed ye naam hai woh sab ek tarah se url ka kaam kar rahe hai */}
                         <Dropdown.Item>all</Dropdown.Item>
-                        <Dropdown.Item>indore</Dropdown.Item>
-                        <Dropdown.Item>bhopal</Dropdown.Item>
-                        <Dropdown.Item>kanadia</Dropdown.Item>
+                        <Dropdown.Item>Dehradun</Dropdown.Item>
+                        <Dropdown.Item>Haldwani</Dropdown.Item>
+                        <Dropdown.Item>Haridwar</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
             </Container>
             <Container>
-                <Table bordered>
+                <Table bordered className="text-center">
                     <thead>
                         <tr>
                             <th>Name</th>
@@ -56,12 +59,12 @@ export function AgentList() {
                                         <td>{agt.street}, {agt.city}, {agt.state}</td>
                                         <td>{agt.email}</td>
                                         <td>{agt.website}</td>
-                                        <td><Button variant="danger" className="btn-sm" onClick={async()=>{
+                                        {/* <td><Button variant="danger" className="btn-sm" onClick={async () => {
                                             await deleteAgent(agt._id);
                                             fetchAgents("all");
                                         }}>Remove</Button>
-                                        {/* <Button variant="primary" className="btn-sm mx-5">Edit List</Button> */}
-                                        </td>
+                                            <Button variant="primary" className="btn-sm mx-5">Edit List</Button>
+                                        </td> */}
                                     </tr>
                                 )
                             })
