@@ -8,11 +8,12 @@ import Yamunotri from '../image/winter/Yamunotri.jpg';
 export default function WinterTime() {
     return (
         <>
-            <p>Around the end of June to the end of September, the monsoon season begins in Char Dham. It is generally not advised to travel during the monsoon season because of the heavy rain and the possibility of landslides and flooding produced by overflowing rivers.</p>
+            <p className='mini-para'>Around the end of June to the end of September, the monsoon season begins in Char Dham. It is generally not advised to travel during the monsoon season because of the heavy rain and the possibility of landslides and flooding produced by overflowing rivers.</p>
 
             <h2 className='heading'>KEDARNATH</h2>
             <img src={kedarnath} alt="" className='image-kedar' />
-            <p className='mini-para'>The best season to visit Kedarnath is summer when the temperature is moderate and stays between 15-30 degrees Celsius. The sun is warm and there is a gentle cool breeze that makes the day pleasant</p>
+            <p className='mini-para'>From October till March
+During the winter season, the region experiences sub-zero temperatures and freezing weather. The temple also remains shut during this time of the year due to heavy snowfall. Sometimes there are sunny days too, and the temperature ranges between 0°C and 20°C.</p>
 
             <h2 className='heading'>BADRINATH</h2>
             <img src={Badrinath} alt="" className='image-kedar' />

@@ -30,6 +30,15 @@ export class Navigationbar extends Component {
                                 <LinkContainer to='/best-timing'>
                                     <Nav.Link>BestTiming</Nav.Link>
                                 </LinkContainer>
+                                <LinkContainer to='/temple-timing'>
+                                    <Nav.Link>Temple Timing</Nav.Link>
+                                </LinkContainer>
+                                <LinkContainer to='/temples'>
+                                    <Nav.Link>Char Dham Temples</Nav.Link>
+                                </LinkContainer>
+                                <LinkContainer to='/hospital'>
+                                    <Nav.Link>Hospitals</Nav.Link>
+                                </LinkContainer>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>

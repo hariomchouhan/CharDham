@@ -50,7 +50,7 @@ export default function Carousels() {
         />
 
         <Carousel.Caption>
-          <h1>Yamnotri</h1>
+          <h1>Yamunotri</h1>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

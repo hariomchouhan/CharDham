@@ -8,9 +8,9 @@ import Yamunotri from '../image/timing_dham/Yamunotri.jpg';
 export default function SummerTime() {
     return (
         <>
-            <p>The Char Dham average temperature ranges between 20°C and 35°C during the summers, thus making it the best time to visit Char Dham Yatra.  The best time to visit the Kedarnath and Badrinath temple is during the summer, from April to June.</p>
+            <p className='mini-para'>The Char Dham average temperature ranges between 20°C and 35°C during the summers, thus making it the best time to visit Char Dham Yatra.  The best time to visit the Kedarnath and Badrinath temple is during the summer, from April to June.</p>
 
-            <p>Due to their higher altitudes, Gangotri and Yamunotri experience a later start to summer—nearly around the end of April. The weather is calm and relaxing, with warmer mornings but a slight drop in temperature at night. So, carry some warm clothes with you during your trip.</p>
+            <p className='mini-para'>Due to their higher altitudes, Gangotri and Yamunotri experience a later start to summer—nearly around the end of April. The weather is calm and relaxing, with warmer mornings but a slight drop in temperature at night. So, carry some warm clothes with you during your trip.</p>
             <h2 className='heading'>KEDARNATH</h2>
             <img src={kedarnath} alt="" className='image-kedar' />
             <p className='mini-para'>The best season to visit Kedarnath is summer when the temperature is moderate and stays between 15-30 degrees Celsius. The sun is warm and there is a gentle cool breeze that makes the day pleasant</p>

@@ -15,6 +15,7 @@ import Tours from '../image/Tours.jpg';
 import TempleTiming from '../image/Temple-Timing.png';
 import BestTiming from '../image/Best-Timing.png';
 import Booking from '../image/Booking.png';
+import Hospital from '../image/Hospital.png';
 
 export default function HomeCard() {
   return (
@@ -59,15 +60,15 @@ export default function HomeCard() {
           <div className="widget Image" data-version="2" id="Image2">
             <div className="widget-content">
               <div className="cooking-area-img">
-                <Link to="/p/html-simplified-series.html">
-                  <img alt="Learn HTML" height="100" id="Image2_img" src={MarketPlace} width="100" />
+                <Link to="/hospital">
+                  <img alt="Learn HTML" height="100" id="Image2_img" src={Hospital} width="100" />
                 </Link>
               </div>
             </div>
             <div className="cooking-area-title">
               <h2>
-                <Link to="/p/html-simplified-series.html" className="cooking-area-title">
-                  Market Places
+                <Link to="/hospital" className="cooking-area-title">
+                  Hospitals
                 </Link>
               </h2>
             </div>
@@ -93,14 +94,14 @@ export default function HomeCard() {
           <div className="widget Image" data-version="2" id="Image2">
             <div className="widget-content">
               <div className="cooking-area-img">
-                <Link to="/p/html-simplified-series.html">
+                <Link to="https://uttarakhandtourism.gov.in/activity/char-dham">
                   <img alt="Learn HTML" height="100" id="Image2_img" src={Tours} width="100" />
                 </Link>
               </div>
             </div>
             <div className="cooking-area-title">
               <h2>
-                <Link to="/p/html-simplified-series.html" className="cooking-area-title">
+                <Link to="https://uttarakhandtourism.gov.in/activity/char-dham" className="cooking-area-title">
                   Tours
                 </Link>
               </h2>
@@ -110,14 +111,14 @@ export default function HomeCard() {
           <div className="widget Image" data-version="2" id="Image2">
             <div className="widget-content">
               <div className="cooking-area-img">
-                <Link to="/p/html-simplified-series.html">
+                <Link to="/best-timing">
                   <img alt="Learn HTML" height="100" id="Image2_img" src={BestTiming} width="100" />
                 </Link>
               </div>
             </div>
             <div className="cooking-area-title">
               <h2>
-                <Link to="/p/html-simplified-series.html" className="cooking-area-title">
+                <Link to="/best-timing" className="cooking-area-title">
                 Best Timing For Journey
                 </Link>
               </h2>
@@ -127,14 +128,14 @@ export default function HomeCard() {
           <div className="widget Image" data-version="2" id="Image2">
             <div className="widget-content">
               <div className="cooking-area-img">
-                <Link to="/p/html-simplified-series.html">
+                <Link to="/booking">
                   <img alt="Learn HTML" height="100" id="Image2_img" src={Booking} width="100" />
                 </Link>
               </div>
             </div>
             <div className="cooking-area-title">
               <h2>
-                <Link to="/p/html-simplified-series.html" className="cooking-area-title">
+                <Link to="/booking" className="cooking-area-title">
                 Booking
                 </Link>
               </h2>
@@ -144,14 +145,14 @@ export default function HomeCard() {
           <div className="widget Image" data-version="2" id="Image2">
             <div className="widget-content">
               <div className="cooking-area-img">
-                <Link to="/p/html-simplified-series.html">
+                <Link to="/booking">
                   <img alt="Learn HTML" height="100" id="Image2_img" src={TouristPlace} width="100" />
                 </Link>
               </div>
             </div>
             <div className="cooking-area-title">
               <h2>
-                <Link to="/p/html-simplified-series.html" className="cooking-area-title">
+                <Link to="/booking" className="cooking-area-title">
                   Tourist Places
                 </Link>
               </h2>
@@ -178,20 +179,37 @@ export default function HomeCard() {
           <div className="widget Image" data-version="2" id="Image2">
             <div className="widget-content">
               <div className="cooking-area-img">
-                <Link to="/hotel">
+                <Link to="/temple-timing">
                   <img alt="Learn HTML" height="100" id="Image2_img" src={TempleTiming} width="100" />
                 </Link>
               </div>
             </div>
             <div className="cooking-area-title">
               <h2>
-                <Link to="/hotel" className="cooking-area-title">
+                <Link to="/temple-timing" className="cooking-area-title">
                   Temple Timing
                 </Link>
               </h2>
             </div>
           </div>
 
+
+          <div className="widget Image" data-version="2" id="Image2">
+            <div className="widget-content">
+              <div className="cooking-area-img">
+                <Link to="/p/html-simplified-series.html">
+                  <img alt="Learn HTML" height="100" id="Image2_img" src={MarketPlace} width="100" />
+                </Link>
+              </div>
+            </div>
+            <div className="cooking-area-title">
+              <h2>
+                <Link to="/p/html-simplified-series.html" className="cooking-area-title">
+                  Market Places
+                </Link>
+              </h2>
+            </div>
+          </div>
 
 
 

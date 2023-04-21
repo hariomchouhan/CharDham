@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Alert, Container, Image, Table } from "react-bootstrap";
+import { Container, Image, Table } from "react-bootstrap";
 import { fetchAllHotel } from "../Services/api";
 
 
